@@ -1,16 +1,16 @@
 var request = require('request');
 
-var movieThis = function(userSearch) {
+var movieThis = function (userSearch) {
+
+    if (userSearch === '') {
+        userSearch = 'mr.nobody';
+    };
 
     var searchArr = userSearch.split(' ');
     var search = searchArr.join('+');
     var url = "http://www.omdbapi.com/?apikey=trilogy&t=" + search;
 
-    if(userSearch === '') {
-        userSearch = 'mr.nobody';
-    };
-
-    request(url, function(err, res, data) {
+    request(url, function (err, res, data) {
 
         if (err) {
 
