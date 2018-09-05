@@ -25,7 +25,7 @@ Concerts for ${userSearch}
                 const loggedResults = `
 Venue    : ${key.venue.name}
 Location : ${key.venue.city} ${key.venue.region}
-Date     : ${moment(key.datetime).format('MM-DD-YYYY')}`;
+Date     : ${moment(key.datetime).format('MMM-Do-YYYY')}`;
                 console.log(loggedResults);
             });
         }
