@@ -1,8 +1,6 @@
 var request = require('request');
 var moment = require('Moment');
 
-console.log("command to concert-this")
-
 var concertThis = function (userSearch) {
 
     request("https://rest.bandsintown.com/artists/" + userSearch + "/events?app_id=codingbootcamp", function (err, response, body) {
