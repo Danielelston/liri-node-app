@@ -1,14 +1,14 @@
 require('dotenv').config();
 
-const Spotify = require('node-spotify-api');
-const keys = require('../keys.js');
-const spotify = new Spotify(keys.spotify);
+var Spotify = require('node-spotify-api');
+var keys = require('../keys.js');
+var spotify = new Spotify(keys.spotify);
 
-const spotifyThis = function (userSearch) {
+var spotifyThis = function (userSearch) {
     if (userSearch === '') {
         spotify
             .request('https://api.spotify.com/v1/tracks/0hrBpAOgrt8RXigk83LLNE')
-            .then((data) => {
+            .then(function (data) {
                 console.log(`
 -------------------------        
 Please input a song title
@@ -20,7 +20,7 @@ Song Preview  : ${data.preview_url}
 Album         : ${data.album.name}`);
 
             })
-            .catch((err) => {
+            .catch(function (err) {
                 console.log(err);
             });
 
@@ -31,9 +31,9 @@ Album         : ${data.album.name}`);
                 return console.log(err);
             }
 
-            const songData = data.tracks.items[0];
+            var songData = data.tracks.items[0];
 
-            const loggedResults = `
+            var loggedResults = `
 Artist(s)     : ${songData.artists[0].name}
 Song Title    : ${songData.name}
 Album         : ${songData.album.name}
