@@ -7,7 +7,7 @@ Use the following commands:
 	- This function will search a chosen artist and find all of their upcoming concerts.
  2. spotify-this-song (song title)
 	 -
-	 -This function will search the given song title and display the song's information.
+	 - This function will search the given song title and display the song's information.
  3. movie-this (movie title)
 	 -
 	 - This function will search the given movie title and provide in depth details about it.
