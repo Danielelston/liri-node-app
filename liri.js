@@ -32,8 +32,13 @@ switch (liriCommand) {
 
     default:
         console.log(`
-        Please a different command
-        `);
+        Please enter in a different command:
+        -----------------------------------
+        -concert-this "name of artist"
+        -spotify-this-song "song title"
+        -movie-this "movie title"
+        -do-what-it-says
+        -----------------------------------`);
         break;
 
 }
