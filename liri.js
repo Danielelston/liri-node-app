@@ -1,6 +1,7 @@
-var concertThis = require('./assets/concert-this.js');
-var spotifyThis = require('./assets/spotify-this-song.js');
-var movieThis = require('./assets/movie-this.js')
+var concertThis = require('./assets/concert-this');
+var spotifyThis = require('./assets/spotify-this-song');
+var movieThis = require('./assets/movie-this');
+var doWhatItSays = require('./assets/do-what-it-says')
 
 require('dotenv').config();
 
