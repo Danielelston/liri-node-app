@@ -16,12 +16,18 @@ var concertThis = function (userSearch) {
         console.log("concert data: " + data);
 
         if (data.length === 0) {
-            console.log('No tour dates found!');
+
+            console.log(`
+--------------------
+No tour dates found!
+--------------------`);
+
         } else {
+
             console.log(`
 Concerts for ${userSearch}
 --------------------------------------------------`)
-            data.forEach( function(key) {
+            data.forEach(function (key) {
                 const loggedResults = `
 Venue    : ${key.venue.name}
 Location : ${key.venue.city} ${key.venue.region}

@@ -1,9 +1,8 @@
 var concertThis = require('./assets/concert-this.js');
+var spotifyThis = require('./assets/spotify-this-song.js');
 
 require('dotenv').config();
-// var spotify = new Spotify(keys.spotify);
 
-// var Spotify = require('node-spotify-api');
 
 
 var userInput = process.argv;
